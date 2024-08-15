@@ -2,23 +2,46 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "prettier"],
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "eslint-config-prettier", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier",
+    "prettier"
+  ],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "prettier/prettier": [
       "warn",
       {
-        "arrowParens": "always",
-        "semi": false,
-        "trailingComma": "none",
-        "tabWidth": 2,
-        "endOfLine": "auto",
-        "useTabs": false,
-        "singleQuote": true,
-        "printWidth": 120,
-        "jsxSingleQuote": true
+        "singleQuote": true,        
+        "semi": false,              
+        "tabWidth": 2,            
+        "bracketSpacing": true,    
+        "printWidth": 80,         
+        "arrowParens": "avoid",    
+        "endOfLine": "auto"        
       }
-    ]
+    ],
+    "no-useless-catch": "off",
+    "no-console": "warn",
+    "no-extra-boolean-cast": "off",
+    "no-lonely-if": "warn",
+    "no-unused-vars": "warn",
+    "no-trailing-spaces": "warn",
+    "no-multi-spaces": "warn",
+    "no-multiple-empty-lines": "warn",
+    "space-before-blocks": ["error", "always"],
+    "object-curly-spacing": ["warn", "always"],
+    "indent": ["warn", 2],
+    "semi": ["warn", "never"],
+    "quotes": ["error", "single"],
+    "array-bracket-spacing": "warn",
+    "linebreak-style": "off",
+    "no-unexpected-multiline": "warn",
+    "keyword-spacing": "warn",
+    "comma-dangle": "warn",
+    "comma-spacing": "warn",
+    "arrow-spacing": "warn"
   }
 }
